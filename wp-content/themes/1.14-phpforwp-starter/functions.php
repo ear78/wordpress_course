@@ -13,7 +13,7 @@ function phpforwp_theme_styles() {
 }
 // Add phpforwp_theme_styles function to wp_enqueue_scripts action hook
 // with a priority of 10
-add_action( '', '', 0 );
+add_action( 'wp_enqueue_scripts', 'phpforwp_theme_styles', 10 );
 
 
 /**
@@ -26,11 +26,14 @@ function phpforwp_read_more_link( $excerpt ) {
 
   // Create a variable called $extended_excerpt and
   // assign it the value of $excerpt
+  $extended_excerpt = $excerpt;
 
   // Append a read more link using get_permalink() as the url
-
+  $extended_excerpt .= '<a href="' . get_permalink() . '">';
+  $extended_excerpt .= 'Read more &raquo';
+  $extended_excerpt .= '</a>';
   // Return $extended_excerpt
-
+  return $extended_excerpt;
 }
 // Add phpforwp_read_more_link function to the get_the_excerpt
 // with a priority of 10
