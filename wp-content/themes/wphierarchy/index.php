@@ -1,10 +1,24 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>WP Hierarchy</title>
-    </head>
-    <body>
-        <h1>index.php</h1>
-    </body>
-</html>
+
+<?php get_header(); ?>
+
+        <div id="primary" class="content-area">
+            <main id="main" class="site-main" role="main">
+
+            </main>
+
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+                <header class="entry-header">
+
+                </header>
+            </article>
+
+            <div>index.php</div>
+
+            <div class="entry-content">
+                <p>Lorem</p>
+            </div>
+
+        </div>
+
+<?php get_footer() ?>
