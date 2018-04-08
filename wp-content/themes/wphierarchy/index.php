@@ -2,6 +2,7 @@
 <?php get_header(); ?>
 
         <div id="primary" class="content-area">
+
             <main id="main" class="site-main" role="main">
 
             </main>
@@ -13,7 +14,7 @@
                 </header>
             </article>
 
-            <div>index.php</div>
+            <h1>index.php</h1>
 
             <div class="entry-content">
                 <p>Lorem</p>

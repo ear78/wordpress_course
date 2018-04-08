@@ -13,11 +13,26 @@
                 <?php esc_html_e( 'Skip to content', 'wphierarchy'); ?>
             </a>
         </div>
-        <nav id="site-navigation" class="main-navigation" role="navigation">
-            <?php
-                $args = [
-                    'theme_location' => 'main-menu'
-                ];
-                wp_nav_menu( $args );
-            ?>
-        </nav>
+
+        <header id="masthead" class="site-header" role="banner">
+            <div class="site-branding">
+                <p class="site-title">
+                    <a href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo( 'name' ); ?></a>
+                </p>
+                <p class="site-description">
+                    <?php bloginfo( 'description' ); ?>
+                </p>
+
+            </div>
+            <nav id="site-navigation" class="main-navigation" role="navigation">
+                <?php
+                    $args = [
+                        'theme_location' => 'main-menu'
+                    ];
+                    wp_nav_menu( $args );
+                ?>
+            </nav>
+
+        </header>
+
+        <div id="content" class=""><!-- main content of site -->
