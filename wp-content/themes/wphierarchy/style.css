@@ -17,4 +17,29 @@ Use it to make something cool, have fun, and share what you've learned with othe
 body {
     height: 100%;
     background: lightyellow;
+    box-sizing: border-box;
+}
+
+#content {
+    display: flex;
+    align-items: baseline;
+}
+
+#primary {
+    width: 70%;
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    padding: 5px;
+    background: #fff;
+}
+
+#secondary {
+    width: 30%;
+    padding: 5px;
+    background: #EEEEEE;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    border-top: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
 }
